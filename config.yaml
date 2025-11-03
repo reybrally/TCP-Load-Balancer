@@ -3,13 +3,13 @@ server:
   port: 8080
 
 backends:
-  - address: backend1
+  - address: localhost
     port: 3001
     weight: 1
-  - address: backend2
+  - address: localhost
     port: 3002
     weight: 1
-  - address: backend3
+  - address: localhost
     port: 3003
     weight: 1
 

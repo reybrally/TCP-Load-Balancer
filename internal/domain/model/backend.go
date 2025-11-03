@@ -25,6 +25,12 @@ func NewBackend(id, address string, port, weight int) *Backend {
 	}
 }
 
+func (b *Backend) GetID() string {
+	b.mu.RLock()
+	defer b.mu.RUnlock()
+	return b.ID
+}
+
 func (b *Backend) GetAddress() string {
 	return fmt.Sprintf("%s:%d", b.Address, b.Port)
 }

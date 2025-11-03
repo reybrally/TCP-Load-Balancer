@@ -116,7 +116,7 @@ func main() {
 	signal.Notify(sigChan, syscall.SIGINT, syscall.SIGTERM)
 
 	<-sigChan
-	log.Warnf("⚠Shutdown signal received, initiating graceful shutdown...")
+	log.Warnf("Shutdown signal received, initiating graceful shutdown...")
 
 	cancel()
 	tcpListener.Close()
@@ -133,7 +133,7 @@ func main() {
 	case <-done:
 		log.Infof("All connections closed gracefully")
 	case <-time.After(ShutdownTimeout):
-		log.Warnf("⚠Timeout waiting for connections to close, forcing shutdown")
+		log.Warnf("Timeout waiting for connections to close, forcing shutdown")
 	}
 
 	printFinalStats(repo, &totalConnections, log)
