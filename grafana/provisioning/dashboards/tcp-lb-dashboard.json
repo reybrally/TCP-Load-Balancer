@@ -1,0 +1,52 @@
+{
+  "dashboard": {
+    "title": "TCP Load Balancer Dashboard",
+    "panels": [
+      {
+        "title": "Active Connections",
+        "targets": [
+          {
+            "expr": "tcp_lb_connections_active"
+          }
+        ],
+        "type": "graph"
+      },
+      {
+        "title": "Total Connections",
+        "targets": [
+          {
+            "expr": "rate(tcp_lb_connections_total[5m])"
+          }
+        ],
+        "type": "graph"
+      },
+      {
+        "title": "Backend Health Status",
+        "targets": [
+          {
+            "expr": "tcp_lb_backend_healthy"
+          }
+        ],
+        "type": "stat"
+      },
+      {
+        "title": "Connection Errors",
+        "targets": [
+          {
+            "expr": "rate(tcp_lb_connection_errors_total[5m])"
+          }
+        ],
+        "type": "graph"
+      },
+      {
+        "title": "Connection Duration (95th percentile)",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, tcp_lb_connection_duration_seconds)"
+          }
+        ],
+        "type": "graph"
+      }
+    ]
+  }
+}

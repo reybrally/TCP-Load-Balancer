@@ -1,15 +1,15 @@
 server:
+  host: 0.0.0.0
   port: 8080
-  host: "0.0.0.0"
 
 backends:
-  - address: "localhost"
+  - address: backend1
     port: 3001
     weight: 1
-  - address: "localhost"
+  - address: backend2
     port: 3002
     weight: 1
-  - address: "localhost"
+  - address: backend3
     port: 3003
     weight: 1
 
