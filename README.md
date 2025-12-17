@@ -8,18 +8,18 @@ A **production-ready** TCP load balancer written in **Go** with Prometheus metri
 
 ## Features
 
-- ** Round-Robin Load Balancing** — Evenly distribute connections across backends
-- ** Health Checking** — Automatic backend health status monitoring every 10 seconds
-- ** Prometheus Metrics** — Full metrics collection for monitoring
-- ** Grafana Dashboards** — Pre-configured dashboards for visualization
-- ** Docker & Docker Compose** — Complete containerized setup
-- ** Unit & Integration Tests** — 30+ tests with full coverage
-- ** Graceful Shutdown** — Clean connection handling with Ctrl+C
-- ** Concurrent-Safe** — Thread-safe connection tracking and state management
+- **Round-Robin Load Balancing** — Evenly distribute connections across backends
+- **Health Checking** — Automatic backend health status monitoring every 10 seconds
+- **Prometheus Metrics** — Full metrics collection for monitoring
+- **Grafana Dashboards** — Pre-configured dashboards for visualization
+- **Docker & Docker Compose** — Complete containerized setup
+- **Unit & Integration Tests** — 30+ tests with full coverage
+- **Graceful Shutdown** — Clean connection handling with Ctrl+C
+- **Concurrent-Safe** — Thread-safe connection tracking and state management
 
 ---
 
-## 🎯 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -99,7 +99,7 @@ make run
 
 ---
 
-## 📋 Configuration
+## Configuration
 
 **File: `config.yaml`**
 
