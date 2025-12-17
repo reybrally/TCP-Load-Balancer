@@ -1,4 +1,4 @@
-# 🚀 TCP Load Balancer
+# TCP Load Balancer
 
 A **production-ready** TCP load balancer written in **Go** with Prometheus metrics, Grafana dashboards, and comprehensive testing.
 
@@ -6,16 +6,16 @@ A **production-ready** TCP load balancer written in **Go** with Prometheus metri
 
 ---
 
-## ✨ Features
+## Features
 
-- **⚖️ Round-Robin Load Balancing** — Evenly distribute connections across backends
-- **🏥 Health Checking** — Automatic backend health status monitoring every 10 seconds
-- **📊 Prometheus Metrics** — Full metrics collection for monitoring
-- **📈 Grafana Dashboards** — Pre-configured dashboards for visualization
-- **🐳 Docker & Docker Compose** — Complete containerized setup
-- **✅ Unit & Integration Tests** — 30+ tests with full coverage
-- **🔄 Graceful Shutdown** — Clean connection handling with Ctrl+C
-- **🔒 Concurrent-Safe** — Thread-safe connection tracking and state management
+- ** Round-Robin Load Balancing** — Evenly distribute connections across backends
+- ** Health Checking** — Automatic backend health status monitoring every 10 seconds
+- ** Prometheus Metrics** — Full metrics collection for monitoring
+- ** Grafana Dashboards** — Pre-configured dashboards for visualization
+- ** Docker & Docker Compose** — Complete containerized setup
+- ** Unit & Integration Tests** — 30+ tests with full coverage
+- ** Graceful Shutdown** — Clean connection handling with Ctrl+C
+- ** Concurrent-Safe** — Thread-safe connection tracking and state management
 
 ---
 
@@ -50,7 +50,7 @@ make run
 
 ---
 
-## 📊 Access Points
+## Access Points
 
 | Service | URL | Credentials |
 |---------|-----|-------------|
@@ -61,7 +61,7 @@ make run
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -122,7 +122,7 @@ backends:
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Run All Tests
 
@@ -148,7 +148,7 @@ make test-coverage
 
 ---
 
-## 📚 API Examples
+## API Examples
 
 ### Check Load Balancer Health
 
@@ -172,7 +172,7 @@ echo "test data" | nc localhost 8080
 
 ---
 
-## 🔧 Make Commands
+## Make Commands
 
 ```bash
 make build              
@@ -189,7 +189,7 @@ make clean
 
 ---
 
-## 📈 Metrics
+## Metrics
 
 ### Available Prometheus Metrics
 
@@ -208,7 +208,7 @@ Pre-configured dashboards available at `http://localhost:3000`:
 
 ---
 
-## 🛠️ Development
+## Development
 
 ### Project Structure
 
@@ -245,18 +245,18 @@ tcp-load-balancer/
 
 ---
 
-## 🏆 Code Quality
+## Code Quality
 
-- ✅ **Unit Tests**: 15+ tests covering core functionality
-- ✅ **Integration Tests**: 7+ tests for end-to-end scenarios
-- ✅ **Concurrent Testing**: Thread-safe operations verified
-- ✅ **Clean Architecture**: Hexagonal/ports-and-adapters pattern
-- ✅ **Error Handling**: Comprehensive error management
-- ✅ **Logging**: Structured logging with Zap
+-  **Unit Tests**: 15+ tests covering core functionality
+-  **Integration Tests**: 7+ tests for end-to-end scenarios
+-  **Concurrent Testing**: Thread-safe operations verified
+-  **Clean Architecture**: Hexagonal/ports-and-adapters pattern
+-  **Error Handling**: Comprehensive error management
+-  **Logging**: Structured logging with Zap
 
 ---
 
-## 🚀 Performance
+## Performance
 
 ### Benchmarks
 
@@ -267,16 +267,16 @@ tcp-load-balancer/
 
 ---
 
-## 🔐 Security
+## Security
 
-- ✅ Graceful error handling
-- ✅ Resource cleanup on shutdown
-- ✅ Connection timeout handling
-- ✅ Metrics exposure protection (local only by default)
+-  Graceful error handling
+-  Resource cleanup on shutdown
+-  Connection timeout handling
+-  Metrics exposure protection (local only by default)
 
 ---
 
-## 📝 Example Usage
+## Example Usage
 
 ### Connect Multiple Clients
 
@@ -290,19 +290,19 @@ watch -n 1 'curl -s http://localhost:9090/metrics | grep tcp_lb'
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please ensure:
-- ✅ All tests pass (`make test`)
-- ✅ Code is formatted (`go fmt ./...`)
-- ✅ New tests for new features
+-  All tests pass (`make test`)
+-  Code is formatted (`go fmt ./...`)
+-  New tests for new features
 
 ---
 
 
 
 
-## 🎓 Learning Resources
+## Learning Resources
 
 This project demonstrates:
 - **TCP/IP networking** in Go
